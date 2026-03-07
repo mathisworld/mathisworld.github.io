@@ -140,3 +140,43 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+/* 탭 버튼 스타일 */
+.tab-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.tab-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 6px 12px;    /* 기존 10px 20px에서 줄임: 위아래 6px, 좌우 12px */
+  font-size: 15px;      /* 기존 18px에서 줄임 */
+  font-weight: bold;
+  color: #444;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+  font-family: 'Lato', sans-serif;
+}
+
+.tab-button:hover {
+  color: #1272f0;
+}
+
+.tab-button.active {
+  color: #1272f0;
+  border-bottom: 2px solid #1272f0;
+}
+
+/* 탭 전환 애니메이션 */
+.tab-content {
+  display: none;
+  animation: fadeEffect 0.6s;
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

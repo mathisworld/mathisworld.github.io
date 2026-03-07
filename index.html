@@ -38,6 +38,18 @@
               </td>
             </tr>
           </tbody></table>
+
+          <div class="tab-container">
+          <button class="tab-button active" onclick="openTab(event, 'publications')">Publications</button>
+          <button class="tab-button" onclick="openTab(event, 'projects')">Projects</button>
+          <button class="tab-button" onclick="openTab(event, 'education')">Education</button>
+          <button class="tab-button" onclick="openTab(event, 'teaching')">Teaching</button>
+          <button class="tab-button" onclick="openTab(event, 'services')">Professional Service</button>
+          <button class="tab-button" onclick="openTab(event, 'employment')">Employment</button>
+          <button class="tab-button" onclick="openTab(event, 'award')">Honors & Awards</button>
+          </div>
+
+          <div id="publications" class="tab-content" style="display: block;">
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:16px;width:100%;vertical-align:middle">
@@ -128,8 +140,163 @@
         </p>
       </td>
     </tr>
-      
+
           </tbody></table>
+
+          </div> 
+          <div id="projects" class="tab-content" style="display: none;">
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+            <tr>
+                <td style="padding:16px;width:100%;vertical-align:middle">
+                    <h2>Research Projects</h2>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+            <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                    <img src="images/project1.jpg" width="100%">
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                    <span class="papertitle">My Awesome UNIST Project</span>
+                    <p>Researching Optimal Transport and World Models.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div id="education" class="tab-content" style="display: none;">
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+            <tr>
+                <td style="padding:16px;width:100%;vertical-align:middle">
+                    <h2>Education</h2>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+            <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                    <img src="images/project1.jpg" width="100%">
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                    <span class="papertitle">My Awesome UNIST Project</span>
+                    <p>Researching Optimal Transport and World Models.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div id="teaching" class="tab-content" style="display: none;">
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+            <tr>
+                <td style="padding:16px;width:100%;vertical-align:middle">
+                    <h2>Teaching</h2>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+            <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                    <img src="images/project1.jpg" width="100%">
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                    <span class="papertitle">My Awesome UNIST Project</span>
+                    <p>Researching Optimal Transport and World Models.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div id="services" class="tab-content" style="display: none;">
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+            <tr>
+                <td style="padding:16px;width:100%;vertical-align:middle">
+                    <h2>Professional Service</h2>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+            <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                    <img src="images/project1.jpg" width="100%">
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                    <span class="papertitle">My Awesome UNIST Project</span>
+                    <p>Researching Optimal Transport and World Models.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div id="employment" class="tab-content" style="display: none;">
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+            <tr>
+                <td style="padding:16px;width:100%;vertical-align:middle">
+                    <h2>Employment</h2>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+            <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                    <img src="images/project1.jpg" width="100%">
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                    <span class="papertitle">None</span>
+                    <p>None</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div id="award" class="tab-content" style="display: none;">
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+            <tr>
+                <td style="padding:16px;width:100%;vertical-align:middle">
+                    <h2>Honors & Awards</h2>
+                    <p>
+                  Selected honors and awards are listed below. 
+                  A full list is available in my <a href="data/cv/cv_SKim20260307.pdf">CV</a>.
+                </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+            <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                    <img src="images/project1.jpg" width="100%">
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                    <span class="papertitle">None</span>
+                    <p>None</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -145,5 +312,22 @@
         </td>
       </tr>
     </table>
+
+    <script>
+      function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tab-button");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+
   </body>
 </html>
